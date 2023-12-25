@@ -1,0 +1,77 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing:border-box; 
+}        
+body { 
+margin :0;
+Overflow-x: hidden;
+transition: 0.5s ;
+color: rgb(2, 4, 16);
+}
+body,div,p{
+margin: 0px;
+padding: 0px;
+}
+div {
+box-sizing: border-box;
+}
+
+.nav-link:hover{
+font-weight: bolder;
+color:#81BDAE;
+}
+
+.nav-link.active{
+    font-weight: bolder;
+    color:#81BDAE!important;
+    }
+
+h3{
+color: #81BDAE;
+}
+.btn{
+color: #f3f3f3;
+background-color: #81BDAE;
+font-weight: bold;
+border-radius: 4px;
+}
+.btn:hover{
+    color:#81BDAE;
+    background-color: none;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid #81BDAE;
+    }
+
+.fa{
+    color:#81BDAE;
+    }
+
+    .fa:hover{
+        color:#81bdae8a
+        
+        }
+
+a{
+text-decoration: none;
+color: rgb(2, 4, 16);
+}
+
+.show-cart li {
+    display: flex;
+  }
+
+.card-img-top{
+aspect-ratio: 3/2;
+object-fit: contain;
+}
+.card{
+    border-radius: 4px;
+    border: 1px solid #81bdae3e;
+}
+
+.card:hover{
+    border:1px solid #81BDAE;
+   
+}

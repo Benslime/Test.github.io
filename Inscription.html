@@ -1,0 +1,153 @@
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inscrivez-Vous :D</title>
+  <link rel="icon" href="img/Logo.svg">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css"> 
+  <link href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/AllPages.css">
+  <script src="js/bootstrap.bundle.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  </head>
+<body>
+<!--Navbar--> 
+<nav class="navbar navbar-expand-lg mt-2 justify-content-center m-5">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="accueil.html">
+          <img src="img/Logo.svg" alt="Vintage" width="30" height="24">
+        </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="accueil.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Àpropos.html">À propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  " href="produits.html">Nos produits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        
+        <li class="nav-item">
+        
+        </li>
+      </ul>
+      <i class="fa fa-shopping-cart m-2" aria-hidden="true" data-toggle="modal" data-target="#cart">(<span class="total-count"></span>)</i>
+        <i class="fa fa-trash clear-cart m-2 me-3" aria-hidden="true"></i>
+      <form class="d-flex mb-2 me-2" role="search">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </form>
+      <a href="Connexion.html"><input type="button" value="Connexion" class="btn mb-2 active"></a>
+      
+      
+      </div>
+   
+  </div>
+</nav>
+<!--/Navbar--> 
+
+<!--contenu--> 
+<div class="container mt-3 flex-wrap justify-content-center mb-3">
+    <div class="row">
+
+    <div class="col-md-6 justify-content-center">
+    <img src="img/Connect.svg" class="mx-auto d-block d-flex" width="90%">
+    </div>
+
+    <div class="col-md-5 justify-content-center mt-5">
+    <h3 class="mb-2 mt-5">Inscrivez-vous</h3>
+    <form id="MyForm" method="post" action="produits.html" onsubmit="return ValidateMyForm()" class="mt-5">
+        
+    
+
+    <div class="form-group m-2">
+    <label for="pseudo">pseudo</label>
+    <input id="pseudo" type="text" name="pseudo" class="form-control mt-2">
+    </div>   
+
+    
+   
+    <div class="row">
+    <div class="col">
+    <div class="form-group m-2">
+    <label for="email">email </label>
+    <input id="email" type="email" name="email" class="form-control mt-2">
+    </div>   
+    </div>
+    <div class="col">
+    <div class="form-group m-2">
+    <label for="mot_de_passe">Mot de passe </label>
+    <input id="mot_de_passe" type="password" name="mot_de_passe" class="form-control mt-2">
+    </div>
+    </div>
+    </div>
+
+    <input type="submit" value="Envoyer" class="btn m-2 me-5 mb-3">
+    </form>
+    <a href="Connexion.html" class="text-primary">Vous avez déjà un compte ? Cliquer ici pour vous connecter</a>
+    </div>
+
+</div>
+
+</div>
+<!--/contenu--> 
+
+<!--modal panier--> 
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartLabel">Panier</h5>
+      </div>
+      <div class="modal-body">
+        <p>Votre panier</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn">Commander</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/modal panier--> 
+
+<script>
+  function ValidateMyForm(){
+  var pseudo=document.forms["MyForm"]["pseudo"].value;
+  var email=document.forms["MyForm"]["email"].value;
+  var mot_de_passe=document.forms["MyForm"]["mot_de_passe"].value;
+   
+  if(pseudo==""){
+  alert("Veuillez choisir un pseudo");
+  return false;
+  }
+
+  if(email==""){
+  alert("Veuillez remplir votre email");
+  return false;
+  }
+
+  if(mot_de_passe==""){
+  alert("Veuillez remplir votre Mot de passe");
+  return false;
+  }
+  
+  if(mot_de_passe.length<8){
+  alert("mot de passe incorrect");
+  return false;
+  }
+ 
+  }
+  </script>
+
+</body>
+
+</html>

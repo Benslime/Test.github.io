@@ -1,0 +1,131 @@
+<html>
+ 
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nos produits</title>
+<link rel="icon" href="img/Logo.svg">
+<script src="js/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css"> 
+<link href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/AllPages.css">
+<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="js/Panier.js"></script>
+</head>
+
+<body>
+<!--Navbar--> 
+<nav class="navbar navbar-expand-lg mt-2 justify-content-center m-5">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="accueil.html">
+          <img src="img/Logo.svg" alt="Vintage" width="30" height="24">
+        </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="accueil.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Àpropos.html">À propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  active" href="produits.html">Nos produits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        
+        <li class="nav-item">
+        
+        </li>
+      </ul>
+      <i class="fa fa-shopping-cart m-2" aria-hidden="true" data-toggle="modal" data-target="#cart">(<span class="total-count"></span>)</i>
+        <i class="fa fa-trash clear-cart m-2 me-3" aria-hidden="true"></i>
+      <form class="d-flex mb-2 me-2" role="search">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </form>
+      <a href="Connexion.html"><input type="button" value="Connexion" class="btn mb-2"></a>
+      
+      
+      </div>
+   
+  </div>
+</nav>
+<!--/Navbar--> 
+
+<!--contenu--> 
+<div class="container mt-5 flex-wrap justify-content-center mb-3">
+  <div class="row">
+    <div class="col-md-3" data-name="Radio 50's">
+      <div class="card text-center">
+        <img class="card-img-top m-2" src="img/Radio 50's.jpg">
+        <div class="card-block">
+          <h4 class="card-title mb-2">Radio 50's</h4>
+          <p class="card-text mb-2">prix: 50.99DT</p>
+          <a href="#" data-name="Radio 50's" data-prix="50.99" class="add-to-cart btn mb-2">Ajouter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3" data-name="Pantalon 70's">
+      <div class="card text-center">
+        <img class="card-img-top m-2" src="img/Pantalon 70's.png">
+        <div class="card-block">
+          <h4 class="card-title mb-2">Pantalon 70's</h4>
+          <p class="card-text mb-2">prix: 45.99DT</p>
+          <a href="#" data-name="Pantalon 70's" data-prix="45.99" class="add-to-cart btn mb-2">Ajouter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3" data-name="Lampe 70's">
+      <div class="card text-center">
+        <img class="card-img-top m-2" src="img/Lampe 70's.png" >
+        <div class="card-block">
+          <h4 class="card-title mb-2">Lampe 70's</h4>
+          <p class="card-text mb-2">prix: 38DT</p>
+          <a href="#" data-name="Lampe 70's" data-prix="38" class="add-to-cart btn mb-2">Ajouter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3" data-name="BD 80's">
+      <div class="card text-center">
+        <img class="card-img-top m-2" src="img/BD 80's.jpg" >
+        <div class="card-block">
+          <h4 class="card-title mb-2">BD 80's</h4>
+          <p class="card-text mb-2">prix: 170.99DT</p>
+          <a href="#" data-name="BD 80's" data-prix="170.99" class="add-to-cart btn mb-2 ">Ajouter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--/contenu--> 
+
+<!--modal panier--> 
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartLabel">Panier</h5>
+      </div>
+      <div class="modal-body">
+        <p>Votre panier</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn">Commander</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/modal panier--> 
+</body>
+</html>
+
